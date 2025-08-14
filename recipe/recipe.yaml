@@ -1,5 +1,5 @@
 context:
-  version: "2.48.4"
+  version: "2.49.4"
 
 package:
   name: webkit2gtk4.1
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://webkitgtk.org/releases/webkitgtk-${{ version }}.tar.xz
-  sha256: f62c1077d3a0f63d50259a802d1143be5d4d0c7c4c05e581819af1ce935afab3
+  sha256: 5b3e758f4cef804e227516a9bf1fe30ce88df6285d1a60d60926dec5bc5463e4
 
 build:
-  number: 1
+  number: 0
   skip: not linux
   script:
     - |
@@ -84,7 +84,7 @@ tests:
         - webkitgtk-4.1/webkit/WebKitVersion.h
         - webkitgtk-4.1/webkit2/webkit2.h
         - webkitgtk-4.1/webkitdom/webkitdom.h
-      lib: 
+      lib:
         - libjavascriptcoregtk-4.1
         - libwebkit2gtk-4.1
       files:
@@ -97,7 +97,8 @@ about:
     WebKitGTK is a full-featured port of the WebKit rendering engine, 
     suitable for projects requiring any kind of web integration, from 
     hybrid HTML/CSS applications to full-fledged web browsers.
-  license: LGPL-2.1-only AND BSD-2-Clause AND BSD-3-Clause AND ISC AND bzip2-1.0.6 AND NCSA AND MIT AND GPL-2.0-only AND MPL-1.1 AND SunPro AND Unicode-TOU AND Apache-2.0 AND GPL-3.0-or-later WITH Bison-exception-2.2 AND GPL-3.0-only WITH Autoconf-exception-3.0 AND MPL-2.0 AND OFL-1.1 AND (AFL-2.0 OR GPL-2.0-or-later) AND BSD-Source-Code AND BSD-2-Clause-Views AND LGPL-2.1-or-later AND (NCSA OR MIT) AND Apache-2.0 WITH LLVM-exception AND ICU AND BSL-1.0
+  license: LGPL-2.1-only AND BSD-2-Clause AND BSD-3-Clause AND ISC AND bzip2-1.0.6 AND NCSA AND MIT AND GPL-2.0-only AND MPL-1.1 AND SunPro AND Unicode-TOU AND Apache-2.0 AND GPL-3.0-or-later WITH Bison-exception-2.2 AND GPL-3.0-only WITH Autoconf-exception-3.0 AND MPL-2.0 AND OFL-1.1 AND (AFL-2.0 OR GPL-2.0-or-later) AND
+    BSD-Source-Code AND BSD-2-Clause-Views AND LGPL-2.1-or-later AND (NCSA OR MIT) AND Apache-2.0 WITH LLVM-exception AND ICU AND BSL-1.0
   license_file:
     - Source/JavaScriptCore/COPYING.LIB
     - Source/ThirdParty/ANGLE/LICENSE
