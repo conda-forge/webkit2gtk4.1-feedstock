@@ -6,8 +6,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://webkitgtk.org/releases/webkitgtk-${{ version }}.tar.xz
-  sha256: 5b3e758f4cef804e227516a9bf1fe30ce88df6285d1a60d60926dec5bc5463e4
+  git: https://github.com/WebKit/WebKit.git
+  tag: "webkitgtk-${{ version }}"
 
 build:
   number: 0
