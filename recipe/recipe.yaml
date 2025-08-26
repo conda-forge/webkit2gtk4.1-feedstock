@@ -8,6 +8,8 @@ package:
 source:
   git: https://github.com/WebKit/WebKit.git
   tag: "webkitgtk-${{ version }}"
+  patches:
+    - patches/gtk3-build.patch
 
 build:
   number: 0
