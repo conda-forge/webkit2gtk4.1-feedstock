@@ -6,11 +6,11 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://webkitgtk.org/releases/webkitgtk-${{ version }}.tar.xz
-  sha256: f62c1077d3a0f63d50259a802d1143be5d4d0c7c4c05e581819af1ce935afab3
+  git: https://github.com/WebKit/WebKit.git
+  tag: "webkitgtk-${{ version }}"
 
 build:
-  number: 1
+  number: 2
   skip: not linux
   script:
     - |
@@ -75,6 +75,8 @@ requirements:
     - xdg-dbus-proxy
     - xorg-xorgproto
     - zlib
+  run_exports:
+    - ${{ pin_subpackage('webkit2gtk4.1', exact=True) }}
 
 tests:
   - package_contents:
