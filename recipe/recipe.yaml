@@ -1,5 +1,5 @@
 context:
-  version: "2.48.4"
+  version: "2.48.5"
 
 package:
   name: webkit2gtk4.1
@@ -10,7 +10,7 @@ source:
   tag: "webkitgtk-${{ version }}"
 
 build:
-  number: 2
+  number: 0
   skip: not linux
   script:
     - |
