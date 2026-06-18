@@ -44,6 +44,7 @@ requirements:
     - expat
     - flite-dev
     - fontconfig
+    - freetype
     - glib
     - gobject-introspection
     - gperf

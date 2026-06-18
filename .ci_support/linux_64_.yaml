@@ -20,6 +20,8 @@ expat:
 - '2'
 fontconfig:
 - '2'
+freetype:
+- '2'
 github_actions_labels:
 - blacksmith-8vcpu-ubuntu-2404
 glib:
