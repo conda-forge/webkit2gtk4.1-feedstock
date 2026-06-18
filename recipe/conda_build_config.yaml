@@ -1,6 +1,6 @@
 c_stdlib_version:   # [linux]
 - '2.34'            # [linux]
 github_actions_labels:
-- cirun-openstack-cpu-2xlarge
+- blacksmith-8vcpu-ubuntu-2404
 libxml2_devel:
 - '2.15.1'

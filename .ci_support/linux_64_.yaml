@@ -21,7 +21,7 @@ expat:
 fontconfig:
 - '2'
 github_actions_labels:
-- cirun-openstack-cpu-2xlarge
+- blacksmith-8vcpu-ubuntu-2404
 glib:
 - '2'
 gst_plugins_base:
@@ -43,7 +43,7 @@ libsoup:
 libsystemd:
 - '257'
 libxml2_devel:
-- '2.13'
+- 2.15.1
 perl:
 - 5.32.1
 target_platform:
