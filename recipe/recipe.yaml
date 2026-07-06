@@ -37,8 +37,6 @@ requirements:
     - pkg-config
     - cmake
     - ninja
-    # header generation breaks with py314+
-    - python 3.10.*
   host:
     - bubblewrap
     - enchant
@@ -73,6 +71,8 @@ requirements:
     - libtasn1
     - libxslt
     - perl
+    # header generation breaks with py314+
+    - python 3.10.*
     - ruby
     - unifdef
     - wayland-protocols
