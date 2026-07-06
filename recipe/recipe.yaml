@@ -72,7 +72,8 @@ requirements:
     - libxslt
     - perl
     # header generation breaks with py314+
-    - python 3.10.*
+    # we use python_abi to constrain python without making the linter think we also need it in run
+    - python_abi 3.10.* *_cp*
     - ruby
     - unifdef
     - wayland-protocols
