@@ -54,6 +54,7 @@ requirements:
     - gstreamer
     - gtk3
     - hyphen
+    - icu
     - lcms2
     - libavif
     - libdrm
@@ -70,6 +71,7 @@ requirements:
     - libtasn1
     - libxslt
     - perl
+    - python 3.10.*
     - ruby
     - unifdef
     - wayland-protocols
