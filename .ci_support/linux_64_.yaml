@@ -27,13 +27,17 @@ github_actions_labels:
 glib:
 - '2'
 gst_plugins_base:
-- '1.26'
+- '1.28'
 gstreamer:
-- '1.26'
+- '1.28'
+icu:
+- '75'
 lcms2:
 - '2'
 libavif:
 - '1'
+libjxl:
+- '0.12'
 liblzma_devel:
 - '5'
 libpng:
