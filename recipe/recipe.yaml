@@ -10,7 +10,7 @@ source:
   tag: "webkitgtk-${{ version }}"
 
 build:
-  number: 1
+  number: 2
   skip: not linux
   script:
     - |
@@ -44,6 +44,7 @@ requirements:
     - expat
     - flite-dev
     - fontconfig
+    - freetype
     - glib
     - gobject-introspection
     - gperf
@@ -53,6 +54,7 @@ requirements:
     - gstreamer
     - gtk3
     - hyphen
+    - icu
     - lcms2
     - libavif
     - libdrm
@@ -61,6 +63,7 @@ requirements:
     - libjxl
     - liblzma-devel
     - libpng
+    - libxml2-devel
     - libseccomp
     - libsecret
     - libsoup
@@ -68,6 +71,9 @@ requirements:
     - libtasn1
     - libxslt
     - perl
+    # header generation breaks with py314+
+    # we use python_abi to constrain python without making the linter think we also need it in run
+    - python_abi 3.10.* *_cp*
     - ruby
     - unifdef
     - wayland-protocols
