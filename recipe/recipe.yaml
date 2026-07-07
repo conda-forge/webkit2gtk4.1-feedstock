@@ -10,7 +10,7 @@ source:
   tag: "webkitgtk-${{ version }}"
 
 build:
-  number: 3
+  number: 4
   skip: not linux
   script:
     - |

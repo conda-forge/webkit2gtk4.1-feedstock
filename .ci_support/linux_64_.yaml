@@ -27,9 +27,9 @@ github_actions_labels:
 glib:
 - '2'
 gst_plugins_base:
-- '1.26'
+- '1.28'
 gstreamer:
-- '1.26'
+- '1.28'
 icu:
 - '78'
 lcms2:
