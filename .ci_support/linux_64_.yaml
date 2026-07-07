@@ -30,10 +30,14 @@ gst_plugins_base:
 - '1.26'
 gstreamer:
 - '1.26'
+icu:
+- '78'
 lcms2:
 - '2'
 libavif:
 - '1'
+libjxl:
+- '0.12'
 liblzma_devel:
 - '5'
 libpng:
