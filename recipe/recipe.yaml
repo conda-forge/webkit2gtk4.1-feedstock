@@ -35,7 +35,9 @@ requirements:
     - ${{ compiler('cxx') }}
     - ${{ stdlib('c') }}
     - pkg-config
-    - cmake
+    # CMake 4.4 rejects if() arguments that expand to nothing, which breaks
+    # Source/cmake/WebKitMacros.cmake in 2.48.x (fixed upstream on main).
+    - cmake <4.4
     - ninja
     # Code generators that only run at build time. Keep them out of host so their
     # run_exports (e.g. ruby -> libffi <3.6, perl) don't become runtime dependencies.
