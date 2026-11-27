@@ -33,7 +33,7 @@ gst_plugins_base:
 gstreamer:
 - '1.28'
 icu:
-- '78'
+- '79'
 lcms2:
 - '2'
 libavif:
